@@ -1,5 +1,5 @@
 {
-    "name": "ramnzys/filament-email-log",
+    "name": "zaruto/filament-email-log",
     "description": "This package provides a Filament resource to view all Laravel outgoing emails.",
     "license": "MIT",
     "keywords": [
