@@ -29,6 +29,14 @@ class Email extends Model
     protected $table = 'filament_email_log';
 
     protected $guarded = [];
+    
+    protected $connection;
+    
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        $this->connection = getenv('DB_CONNECTION', 'mysql');
+    }
 
     /**
      * Get the prunable model query.
